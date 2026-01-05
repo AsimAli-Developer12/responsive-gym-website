@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 106vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.14),rgba(0,0,0.14)),url(img/pribg.jpg);
+    gap: 18vw;
+}
+
+.logo{
+    height: 22%;
+    width: 13%;
+}
+
+.logo img{
+    height: 16vw;
+    width: auto;
+    padding: 0vw 0vw 6vw 4vw;
+}
+
+.bar-icon{
+    display: none;
+}
+
+.nav-link ul{
+    display: flex;
+    gap: 6vw;
+    padding: 2vw 2vw;
+    margin-top: -8%;
+    margin-left: 30%;
+    padding-left: 2%;
+    height: 7%;
+    width: 28%;
+    border-bottom: 2px solid silver;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    font-family: "Anton", sans-serif;
+    font-weight: 600;
+    transition: .1s ease-in-out;
+}
+
+li a:hover{
+    color: rgb(147, 147, 41);
+}
+
+li a:active{
+    color: yellow;
+}
+
+
+
+.price-section{
+    height: 40vw;
+    margin-top: 2%;
+}
+
+.price-section h2{
+    font-size: 3.7vw;
+    -webkit-text-stroke: 0.1vw;
+    font-family: "Anton", sans-serif;
+    font-weight: 700;
+    color: orange;
+    text-align: center;
+}
+
+
+.list1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list{
+    height: 27vw;
+    width: 18vw;
+    background-color: rgba(209, 207, 207, 0.363);
+    padding: 2vw 1vw;
+    margin-top: 6%;
+    border-radius: 1vw;
+    transition: .1s ease-in-out;
+}
+
+.list:hover{
+    transform: translateY(-20px);
+}
+
+.list h3{
+    font-size: 2vw;
+    text-decoration: underline;
+    color: orangered;
+    font-family: "Anton", sans-serif;
+}
+
+.list span{
+    font-size: 2vw;
+}
+
+.list p{
+    font-size: 1vw;
+    color: orangered;
+    font-family: "Anton", sans-serif;
+    margin-top: 2%;
+}
+
+.tagsa{
+    display: flex;
+    gap: 1vw;
+    flex-direction: column;
+    font-size: 1.4vw;
+    font-weight: 600;
+    font-family: "Anton", sans-serif;
+    margin-top: 16%;
+    color: black;
+    margin-left: 2%;
+}
+
+.tagsa i{
+    color: red;
+}
+
+.buy{
+    height: 2vw;
+    width: 6vw;
+    background-color: orangered;
+    font-size: 0.8vw;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-family: "Anton", sans-serif;
+    border-radius: 0.8vw;
+    margin: 2vw 1vw;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Media Queries */
+
+
+
+/* Small mobile screen */
+
+@media (min-width: 200px) and (max-width: 320px) {
+
+    .header{
+        height: 100vh;
+    }
+
+    .logo{
+        height: 10%;
+        width: 29%;
+        padding: 2vw 2vw;
+    }
+
+    .logo img{
+        height: 6rem;
+        width: auto;
+    }
+
+    .bar-icon{
+        display: block;
+        float: right;
+        font-size: 1rem;
+        margin-right: 6vw;
+        margin-top: -10vw;
+        color: white;
+    }
+
+    .nav-link ul{
+        width: 32%;
+        float: right;
+        margin-right: 4vw;
+        display: none;
+    }
+
+    li a{
+        font-size: 2vw;
+    }
+
+    .price-section{
+        margin-top: 22vw;
+    }
+
+    .price-section h2{
+        font-size: 8vw;
+    }
+
+    .list1{
+        margin: 22vw 3vw;
+        gap: 5vw;
+    }
+
+    .list{
+        height: 43vw;
+        width: 44vw;
+        margin-top: 10vw;
+    }
+
+    .list h3{
+        font-size: 2.6vw;
+        margin: 1vw 3vw;
+    }
+
+    .list p{
+        font-size: 2.3vw;
+        margin: 2vw 3vw;
+    }
+
+    .tagsa{
+        font-size: 2vw;
+    }
+
+    .buy{
+        margin: 3vw 3vw;
+        font-size: 1.5vw;
+        height: 2.7vw;
+        width: 7.3vw;
+    }
+    
+}
+
+
+
+
+/* =====Medium mobile screen====== */
+
+@media (min-width: 321px) and (max-width: 376px) {
+
+    .header{
+        height: 100vh;
+    }
+
+    .logo{
+        height: 10%;
+        width: 29%;
+        padding: 2vw 2vw;
+    }
+
+    .logo img{
+        height: 6rem;
+        width: auto;
+    }
+
+    .bar-icon{
+        display: block;
+        float: right;
+        font-size: 1rem;
+        margin-right: 6vw;
+        margin-top: -10vw;
+        color: white;
+    }
+
+    .nav-link ul{
+        width: 32%;
+        float: right;
+        margin-right: 4vw;
+        display: none;
+    }
+
+    li a{
+        font-size: 2vw;
+    }
+    
+    
+    .price-section{
+        margin-top: 16vw;
+    }
+
+    .price-section h2{
+        font-size: 8vw;
+    }
+
+    .list1{
+        margin: 16vw 3vw;
+        gap: 5vw;
+    }
+
+    .list{
+        height: 43vw;
+        width: 44vw;
+        margin-top: 10vw;
+    }
+
+    .list h3{
+        font-size: 2.6vw;
+        margin: 1vw 3vw;
+    }
+
+    .list p{
+        font-size: 2.3vw;
+        margin: 2vw 3vw;
+    }
+
+    .tagsa{
+        font-size: 2vw;
+    }
+
+    .buy{
+        margin: 3vw 3vw;
+        font-size: 1.5vw;
+        height: 2.7vw;
+        width: 7.3vw;
+    }
+
+}
+
+
+
+
+/* ====Large mobile screen==== */
+
+@media (min-width: 377px) and (max-width: 426px) {
+
+    .header{
+        height: 100vh;
+    }
+
+    .logo{
+        height: 10%;
+        width: 29%;
+        padding: 2vw 2vw;
+    }
+
+    .logo img{
+        height: 6rem;
+        width: auto;
+    }
+
+    .bar-icon{
+        display: block;
+        float: right;
+        font-size: 1rem;
+        margin-right: 6vw;
+        margin-top: -10vw;
+        color: white;
+    }
+
+    .nav-link ul{
+        background-color: aqua;
+        width: 32%;
+        float: right;
+        margin-right: 4vw;
+        display: none;
+    }
+
+    li a{
+        font-size: 2vw;
+    }
+
+
+
+    .price-section{
+        margin-top: 16vw;
+    }
+
+    .price-section h2{
+        font-size: 8vw;
+    }
+
+    .list1{
+        margin: 16vw 3vw;
+        gap: 5vw;
+    }
+
+    .list{
+        height: 43vw;
+        width: 44vw;
+        margin-top: 10vw;
+    }
+
+    .list h3{
+        font-size: 2.6vw;
+        margin: 1vw 3vw;
+    }
+
+    .list p{
+        font-size: 2.3vw;
+        margin: 2vw 3vw;
+    }
+
+    .tagsa{
+        font-size: 2vw;
+    }
+
+    .buy{
+        margin: 3vw 3vw;
+        font-size: 1.5vw;
+        height: 2.7vw;
+        width: 7.3vw;
+    }
+    
+}
+
+
+
+
+
+
+
+/* Tablet screen */
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .logo{
+        height: 15vw;
+        width: 19vw;
+        padding-top: 2%;
+    }
+
+    .logo img{
+        height: 21vw;
+        width: auto;
+    }
+
+    .nav-link ul{
+        float: right;
+        margin-right: 8vw;
+        margin-top: -8vw;
+        width: 32.3%;
+    }
+
+    li a{
+        font-size: 1.8vw;
+    }
+
+    .price-section{
+        margin-top: 6%;
+    }
+
+    .price-section h2{
+        font-size: 4.6vw;
+    }
+
+    .list1{
+        margin-top: 5vw;
+    }
+
+    .list{
+        height: 31vw;
+        width: 26vw;
+    }
+
+    .list h3{
+        font-size: 2.3vw;
+    }
+
+    .list p{
+        font-size: 1.5vw;
+        margin-top: 1vw;
+    }
+    
+    .tagsa{
+        font-size: 1.5vw;
+    }
+
+    .but{
+        height: 2.3vw;
+        width: 6.2vw;
+        font-size: 1vw;
+    }
+
+}
+
+
+
+
+
+
+/* ======Laptop screen====== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .logo{
+        height: 15vw;
+        width: 19vw;
+        padding-top: 2%;
+    }
+
+    .logo img{
+        height: 19vw;
+        width: auto;
+    }
+
+    .nav-link ul{
+        float: right;
+        margin-right: 8vw;
+        margin-top: -8vw;
+        width: 32%;
+    }
+
+    li a{
+        font-size: 1.7vw;
+    }
+
+    .price-section{
+        margin-top: 6%;
+    }
+
+    .price-section h2{
+        font-size: 4vw;
+    }
+
+    .list1{
+        margin-top: 5vw;
+    }
+
+    .list{
+        height: 29vw;
+        width: 23vw;
+    }
+
+    .list h3{
+        font-size: 2.3vw;
+    }
+
+    .list p{
+        font-size: 1.5vw;
+    }
+    
+    .tagsa{
+        font-size: 1.5vw;
+    }
+
+    .but{
+        height: 2.3vw;
+        width: 6.2vw;
+        font-size: 1vw;
+    }
+    
+}
+
+
+
+
+
+/* ======Large Laptop screen======== */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .logo{
+        height: 15vw;
+        width: 19vw;
+        padding-top: 2%;
+    }
+
+    .logo img{
+        height: 18vw;
+        width: auto;
+    }
+
+    .nav-link ul{
+        float: right;
+        margin-right: 8vw;
+        margin-top: -8vw;
+        width: 31%;
+    }
+
+    li a{
+        font-size: 1.6vw;
+    }
+
+    .price-section{
+        margin-top: 6%;
+    }
+
+    .price-section h2{
+        font-size: 3.7vw;
+    }
+
+    .list1{
+        margin-top: 2vw;
+    }
+
+    .list{
+        height: 29vw;
+        width: 23vw;
+    }
+
+    .list h3{
+        font-size: 2.3vw;
+    }
+
+    .list p{
+        font-size: 1.5vw;
+    }
+    
+    .tagsa{
+        font-size: 1.5vw;
+    }
+
+    .but{
+        height: 2.3vw;
+        width: 6.2vw;
+        font-size: 1vw;
+    }
+    
+}

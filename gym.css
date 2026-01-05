@@ -1,0 +1,1072 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ======TOP====== */
+
+.header{
+    position: relative;
+    height: calc(100vh - 0px);
+    width: 100%;
+    background-color: #00000071;
+    gap: 18vw;
+}
+
+.bg-vdo{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.bar-icon{
+    color: white;
+    font-size: 2vw;
+    float: right;
+    margin-top: -6%;
+    margin-right: 5%;
+    display: none;
+}
+
+.logo{
+    height: 22%;
+    width: 13%;
+}
+
+.logo img{
+    height: 16vw;
+    width: auto;
+    padding: 0vw 0vw 6vw 4vw;
+}
+
+.nav-link ul{
+    display: flex;
+    gap: 6vw;
+    padding: 2vw 2vw;
+    margin-top: -8%;
+    margin-left: 30%;
+    padding-left: 2%;
+    height: 7%;
+    width: 28%;
+    border-bottom: 2px solid gray;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    font-family: "Anton", sans-serif;
+    font-weight: 600;
+    transition: .1s ease-in-out;
+}
+
+li a:hover{
+    color: rgb(147, 147, 41);
+}
+
+li a:active{
+    color: yellow;
+}
+
+
+/* =====2nd====== */
+.LtoR-content{
+    display: flex;
+}
+
+.left-content{
+    height: 34vw;
+    width: 40vw;
+    margin: 3vw 3vw;
+}
+
+.left-content h1{
+    font-size: 3.1vw;
+    padding: 1vw 3vw;
+    color: white;
+    font-family: "BBH Bogle", sans-serif;
+    font-weight: 800;
+}
+
+.left-content span{
+    color: orangered;
+}
+
+.left-content p{
+    font-size: 1vw;
+    padding: 2vw 3vw;
+    line-height: 1.4vw;
+    font-family: "BBH Bogle", sans-serif;
+    color: rgb(203, 200, 200);
+}
+
+
+
+/* =====Form======= */
+
+.right-content{
+    height: 34vw;
+    width: 30vw;
+    background: rgba(0, 0, 0, 0.425);
+    box-shadow: inset 1px 2px 2px  rgba(0, 0, 0, 0.221);
+    border-radius: 1vw;
+    margin: 3vw 12vw;
+}
+
+.right-content h1{
+    font-size: 1.5vw;
+    text-decoration: underline orangered;
+    font-family: "BBH Bogle", sans-serif;
+    color: orangered;
+    margin-left: 4%;
+    padding: 2vw 6.6vw;
+}
+
+
+.form{
+    padding: 1vw;
+    gap: 2vw;
+    margin-left: 3%;
+}
+
+.name{
+    font-size: 1.3vw;
+    color: white;
+    font-family: "BBH Bogle", sans-serif;
+}
+
+.form ::placeholder{
+    color: rgb(204, 202, 202);
+}
+.form input{
+    height: 3vw;
+    width: 20vw;
+    color: white;
+    font-size: 1vw;
+    padding-left: 1%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    background: transparent;
+    padding-top: 4.7%;
+    margin-left: 2%;
+}
+
+.form1 ::placeholder{
+    color: rgb(204, 202, 202);
+}
+.form1{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.email{
+    font-size: 1.3vw;
+    margin-left: 2%;
+    margin-top: 5%;
+    color: white;
+    font-family: "BBH Bogle", sans-serif;
+}
+
+.form1 input{
+    height: 3vw;
+    width: 16vw;
+    outline: none;
+    padding-left: 1%;
+    color: white;
+    font-size: 1vw;
+    border: none;
+    border-bottom: 2px solid gray;
+    background: transparent;
+    padding-top: 3%;
+    margin-left: 2%;
+}
+
+.form2{
+    outline: none;
+    background: transparent;
+    margin: 4vw 2vw;
+}
+
+.goal{
+    font-size: 1.3vw;
+    font-family: "BBH Bogle", sans-serif;
+    color: white;
+}
+
+.choose,.wl,.mg,.ct{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.811);
+    box-shadow: inset 2px 3px 3px gray;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+
+.slct{
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border: 2px solid gray;
+    background-color: rgba(0, 0, 0, 0.811);
+    margin-left: 4%;
+    font-size: 0.9vw;
+    font-weight: 500;
+}
+
+.form13 ::placeholder{
+    color: rgb(204, 202, 202);
+}
+
+
+/* ======msgform====== */
+
+.form3{
+    display: flex;
+    flex-direction: column;
+    margin: 1vw 6vw;
+
+}
+
+#msg{
+    width: 17vw;
+    resize: none;
+    outline: none;
+    background: transparent;
+    padding: 0.6vw 1vw;
+    font-size: 1vw;
+    color: white;
+    margin-top: 4%;
+    border: 2px solid gray;
+}
+
+.msg{
+    font-size: 1.3vw;
+    margin-left: 12%;
+    color: white;
+    font-family: "BBH Bogle", sans-serif;
+}
+
+.rating{
+    display: flex;
+    margin: 1vw 3vw;
+}
+
+.rating p{
+    font-size: 1vw;
+    color: white;
+    font-family: "BBH Bogle", sans-serif;
+}
+
+.rating i{
+    color: yellow;
+    cursor: pointer;
+    font-size: 1vw;
+    margin-left: 1vw;
+    padding-left: 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ========Media Queries========= */
+
+/* ====Small mobile Screen======= */
+
+@media (min-width: 200px) and (max-width: 320px) {
+    .logo{
+        height: 10%;
+        width: 30%;
+        padding-top: 6%;
+    }
+
+    .logo img{
+        height: 5.6rem;
+        width: auto;
+    }
+
+    .bar-icon{
+        display: block;
+        font-size: 7vw;
+        margin-right: 10%;
+    }
+
+    .nav-link ul{
+        margin-right: 10%;
+        margin-bottom: 15%;
+        float: right;
+        width: 32%;
+        display: none;
+    }
+
+    li a{
+        font-size: 1.9vw;
+    }
+
+
+    /* =====2nd===== */
+
+    .LtoR-content{
+        flex-direction: column;
+    }
+
+    .left-content{
+        height: 50vw;
+        width: 100%;
+        margin: 20% 7%;
+    }
+
+    .left-content h1{
+        font-size: 7vw;
+    }
+
+    .left-content p{
+        font-size: 2.5vw;
+        line-height: 3.4vw;
+        margin-top: 4%;
+        padding: 2vw 5vw;
+    }
+
+
+    /* ====Form===== */
+    
+    .right-content{
+        height: 95vw;
+        width: 80%;
+        margin-top: 1vw;
+    }
+
+    .right-content h1{
+        font-size: 6vw;
+        margin-left: 13%;
+        margin-top: 3%;
+    }
+
+    .form{
+        margin-top: 3%;
+    }
+
+    .form input{
+        width: 38vw;
+        font-size: 2.4vw;
+        padding: 2vw;
+    }
+
+    .name{
+        font-size: 4vw;
+    }
+
+    .form1 input{
+        width: 34vw;
+        margin-top: 5%;
+        font-size: 2.4vw;
+        padding: 2vw;
+    }
+
+    .email{
+        font-size: 4vw;
+        margin-left: -0.6vw;
+    }
+
+    .goal{
+        font-size: 4vw;
+    }
+
+    .choose,.wl,.mg,.ct{
+        font-size: 1.7vw;
+    }
+
+    .slct{
+        font-size: 2vw;
+        height: 4vw;
+        border: 1px solid gray;
+    }
+
+    .form2{
+        margin-top: 7vw;
+    }
+
+    /* =====msgform====== */
+
+    .form3{
+        margin-top: 7vw;
+    }
+
+    .msg{
+        font-size: 3vw;
+        margin-left: 26%;
+    }
+
+    #msg{
+        resize: none;
+        font-size: 2.4vw;
+        margin-left: 8vw;
+        margin-top: 4vw;
+    }
+
+    .rating{
+        margin-top: 5vw;
+    }
+
+    .rating p{
+        font-size: 2.9vw;
+    }
+
+    .rating i{
+        font-size: 3vw;
+        padding-left: 4vw;
+    }
+}
+
+
+
+/* ====Meduim mobile screen==== */
+
+@media (min-width: 321px) and (max-width: 376px) {
+    
+    .header{
+        height: 100%;
+    }
+
+    .bg-vdo{
+        height: 100%;
+    }
+
+    .logo{
+        height: 10%;
+        width: 30%;
+        padding-top: 6%;
+    }
+
+    .logo img{
+        height: 5.8rem;
+        width: auto;
+    }
+
+    .bar-icon{
+        display: block;
+        font-size: 1.4rem;
+        margin-right: 9%;
+        margin-top: -18vw;
+    }
+
+    .nav-link ul{
+        margin-right: 10%;
+        margin-bottom: 15%;
+        float: right;
+        width: 32%;
+        display: none;
+    }
+
+    li a{
+        font-size: 1.9vw;
+    }
+
+
+    /* =====2nd===== */
+
+    .LtoR-content{
+        flex-direction: column;
+    }
+
+    .left-content{
+        height: 52vw;
+        width: 90%;
+        margin: 8% 4%;
+    }
+
+    .left-content h1{
+        font-size: 7vw;
+    }
+
+    .left-content p{
+        font-size: 2.6vw;
+        line-height: 3.4vw;
+        margin-top: 3%;
+        padding: 2vw 8vw;
+    }
+
+
+    /* ====Form===== */
+    
+    .right-content{
+        height: 96vw;
+        width: 80%;
+        margin-top: 1vw;
+    }
+
+    .right-content h1{
+        font-size: 5vw;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    .form{
+        margin-top: 10%;
+    }
+
+    .form input{
+        width: 38vw;
+        font-size: 2.4vw;
+        padding: 2vw;
+    }
+
+    .name{
+        font-size: 4vw;
+    }
+
+    .form1{
+        margin-top: 8%;
+    }
+
+    .form1 input{
+        width: 34vw;
+        margin-top: 5%;
+        font-size: 2.4vw;
+        padding: 2vw;
+    }
+
+    .email{
+        font-size: 4vw;
+        margin-left: -0.6vw;
+    }
+
+    .goal{
+        font-size: 3.6vw;
+        margin-left: 3%;
+    }
+
+    .choose,.wl,.mg,.ct{
+        font-size: 1.7vw;
+    }
+
+    .slct{
+        font-size: 2vw;
+        height: 4vw;
+        border: 1px solid gray;
+    }
+
+    .form2{
+        margin-top: 7vw;
+    }
+
+    /* =====msgform====== */
+
+    .form3{
+        margin-top: 7vw;
+    }
+
+    .msg{
+        font-size: 3vw;
+        margin-left: 26%;
+    }
+
+    #msg{
+        resize: none;
+        font-size: 2.4vw;
+        margin-top: 4vw;
+        margin-left: 10vw;
+    }
+
+    .rating{
+        margin-top: 5vw;
+    }
+
+    .rating p{
+        font-size: 2.9vw;
+    }
+
+    .rating i{
+        font-size: 3vw;
+        padding-left: 4vw;
+    }
+
+}
+
+
+
+
+/* Large mobile screen */
+
+@media (min-width: 377px) and (max-width: 426px) {
+
+    .header{
+        height: 100%;
+    }
+
+    .bg-vdo{
+        height: 100%;
+    }
+
+    .logo{
+        height: 10%;
+        width: 30%;
+        padding-top: 6%;
+    }
+
+    .logo img{
+        height: 5.8rem;
+        width: auto;
+    }
+
+    .bar-icon{
+        display: block;
+        font-size: 1.4rem;
+        margin-right: 9%;
+        margin-top: -18vw;
+    }
+
+    .nav-link ul{
+        margin-right: 10%;
+        margin-bottom: 15%;
+        float: right;
+        width: 32%;
+        display: none;
+    }
+
+    li a{
+        font-size: 1.9vw;
+    }
+
+
+    /* =====2nd===== */
+
+    .LtoR-content{
+        flex-direction: column;
+    }
+
+    .left-content{
+        height: 52vw;
+        width: 90%;
+        margin: 8% 4%;
+    }
+
+    .left-content h1{
+        font-size: 7vw;
+    }
+
+    .left-content p{
+        font-size: 2.6vw;
+        line-height: 3.4vw;
+        margin-top: 3%;
+        padding: 2vw 8vw;
+    }
+
+
+    /* ====Form===== */
+    
+    .right-content{
+        height: 96vw;
+        width: 80%;
+        margin-top: 1vw;
+    }
+
+    .right-content h1{
+        font-size: 5vw;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    .form{
+        margin-top: 10%;
+    }
+
+    .form input{
+        width: 38vw;
+        font-size: 2.4vw;
+        padding: 2vw;
+    }
+
+    .name{
+        font-size: 4vw;
+    }
+
+    .form1{
+        margin-top: 8%;
+    }
+
+    .form1 input{
+        width: 34vw;
+        margin-top: 5%;
+        font-size: 2.4vw;
+        padding: 2vw;
+    }
+
+    .email{
+        font-size: 4vw;
+        margin-left: -0.6vw;
+    }
+
+    .goal{
+        font-size: 3.6vw;
+        margin-left: 3%;
+    }
+
+    .choose,.wl,.mg,.ct{
+        font-size: 1.7vw;
+    }
+
+    .slct{
+        font-size: 2vw;
+        height: 4vw;
+        border: 1px solid gray;
+    }
+
+    .form2{
+        margin-top: 7vw;
+    }
+
+    /* =====msgform====== */
+
+    .form3{
+        margin-top: 7vw;
+    }
+
+    .msg{
+        font-size: 3vw;
+        margin-left: 26%;
+    }
+
+    #msg{
+        resize: none;
+        font-size: 2.4vw;
+        margin-top: 5vw;
+        margin-left: 15vw;
+    }
+
+    .rating{
+        margin-top: 6vw;
+    }
+
+    .rating p{
+        font-size: 2.9vw;
+    }
+
+    .rating i{
+        font-size: 3vw;
+        padding-left: 5vw;
+    }
+    
+}
+
+
+
+
+/* =========Tablet screen========  */
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .logo{
+        height: 15vw;
+        width: 19vw;
+        padding-top: 2%;
+    }
+
+    .logo img{
+        height: 21vw;
+        width: auto;
+    }
+
+    .nav-link ul{
+        float: right;
+        margin-right: 8vw;
+        margin-top: -8vw;
+        width: 32.3%;
+    }
+
+    li a{
+        font-size: 1.8vw;
+    }
+
+
+    /* ======2nd==== */
+
+    .left-content{
+        margin-top: 13vw;
+        width: 60vw;
+        height: 42vw;
+    }
+
+    .left-content h1{
+        font-size: 3.2vw;
+    }
+
+    .left-content p{
+        margin-top: 2vw;
+        line-height: 2.4vw;
+        width: 80%;
+        font-size: 1.6vw;
+    }
+
+
+
+    /* =====Form====== */
+
+    .right-content{
+        margin-top: 13vw;
+        margin-left: 5vw;
+        height: 42vw;
+        width: 40vw;
+    }
+
+    .right-content h1{
+        font-size: 1.6vw;
+    }
+
+    .form input{
+        font-size: 1.3vw;
+    }
+
+    .name{
+        font-size: 1.5vw;
+    }
+
+    .form1 input{
+        font-size: 1.3vw;
+    }
+
+    .email{
+        font-size: 1.5vw;
+    }
+
+    .goal{
+        font-size: 1.4vw;
+    }
+
+
+    /* =======msgform======= */
+
+    .msg{
+        font-size: 1.4vw;
+    }
+
+    #msg{
+        font-size: 1.3vw;
+        margin-top: 2vw;
+    }
+
+    .rating{
+        margin-top: 2vw;
+    }
+    
+}
+
+
+
+
+/* ======Laptop screen====== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .logo{
+        height: 15vw;
+        width: 19vw;
+        padding-top: 2%;
+    }
+
+    .logo img{
+        height: 18vw;
+        width: auto;
+    }
+
+    .nav-link ul{
+        float: right;
+        margin-right: 8vw;
+        margin-top: -9vw;
+        width: 30%;
+    }
+
+    li a{
+        font-size: 1.6vw;
+    }
+
+
+    /* ======2nd==== */
+
+    .left-content{
+        margin-top: 4vw;
+        width: 60vw;
+        height: 42vw;
+    }
+
+    .left-content h1{
+        font-size: 3.4vw;
+    }
+
+    .left-content p{
+        margin-top: 1.8vw;
+        line-height: 2.4vw;
+        width: 80%;
+        font-size: 1.6vw;
+    }
+
+
+
+    /* =====Form====== */
+
+    .right-content{
+        margin-top: 4vw;
+        margin-left: 5vw;
+        height: 42vw;
+        width: 40vw;
+    }
+
+    .right-content h1{
+        font-size: 1.6vw;
+    }
+
+    .form input{
+        font-size: 1.3vw;
+    }
+
+    .name{
+        font-size: 1.5vw;
+    }
+
+    .form1 input{
+        font-size: 1.3vw;
+    }
+
+    .email{
+        font-size: 1.5vw;
+    }
+
+    .goal{
+        font-size: 1.4vw;
+    }
+
+
+    /* =======msgform======= */
+
+    .msg{
+        font-size: 1.4vw;
+    }
+
+    #msg{
+        font-size: 1.3vw;
+        margin-top: 2vw;
+    }
+
+    .rating{
+        margin-top: 3vw;
+    }
+    
+}
+
+
+
+
+
+/* Large Laptop screen */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .logo{
+        height: 15vw;
+        width: 19vw;
+        padding-top: 1%;
+    }
+
+    .logo img{
+        height: 18vw;
+        width: auto;
+    }
+
+    .nav-link ul{
+        float: right;
+        margin-right: 8vw;
+        margin-top: -10.5vw;
+        width: 29%;
+    }
+
+    li a{
+        font-size: 1.5vw;
+    }
+
+
+    /* ======2nd==== */
+
+    .left-content{
+        margin-top: 1vw;
+        width: 60vw;
+        height: 42vw;
+    }
+
+    .left-content h1{
+        font-size: 3.4vw;
+    }
+
+    .left-content p{
+        margin-top: 1.3vw;
+        line-height: 2.4vw;
+        width: 80%;
+        font-size: 1.6vw;
+    }
+
+
+
+    /* =====Form====== */
+
+    .right-content{
+        margin-top: 1vw;
+        margin-left: 5vw;
+        height: 42vw;
+        width: 38vw;
+    }
+
+    .right-content h1{
+        font-size: 1.6vw;
+    }
+
+    .form input{
+        font-size: 1.3vw;
+    }
+
+    .name{
+        font-size: 1.5vw;
+    }
+
+    .form1 input{
+        font-size: 1.3vw;
+    }
+
+    .email{
+        font-size: 1.5vw;
+    }
+
+    .goal{
+        font-size: 1.4vw;
+    }
+
+
+    /* =======msgform======= */
+
+    .msg{
+        font-size: 1.4vw;
+    }
+
+    #msg{
+        font-size: 1.3vw;
+        margin-top: 2vw;
+    }
+
+    .rating{
+        margin-top: 3vw;
+    }
+    
+}

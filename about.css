@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 108vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.14),rgba(0,0,0.14)),url(img/abobg.png);
+    gap: 18vw;
+}
+
+.logo{
+    height: 22%;
+    width: 13%;
+}
+
+.logo img{
+    height: 16vw;
+    width: auto;
+    padding: 0vw 0vw 6vw 4vw;
+}
+
+.nav-link ul{
+    display: flex;
+    gap: 6vw;
+    padding: 2vw 2vw;
+    margin-top: -8%;
+    margin-left: 30%;
+    padding-left: 2%;
+    height: 7%;
+    width: 28%;
+    border-bottom: 2px solid silver;
+}
+
+.bar-icon{
+    display: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    font-family: "Anton", sans-serif;
+    font-weight: 600;
+    transition: .1s ease-in-out;
+}
+
+li a:hover{
+    color: rgb(147, 147, 41);
+}
+
+li a:active{
+    color: yellow;
+}
+
+
+.section-2{
+    height: 20vw;
+    margin: 2vw 1vw;
+
+}
+
+.section-2 h1{
+    font-size: 2.6vw;
+    padding: 1vw 6vw;
+    font-family: "Anton", sans-serif;
+    font-weight: 600;
+    -webkit-text-stroke: 0.1vw white;
+    color: orangered;
+}
+
+.section-2 p{
+    font-size: 1vw;
+    color: rgb(228, 225, 225);
+    line-height: 1.7vw;
+    padding: 1vw 6vw;
+    width: 80%;
+    font-family: "Anton", sans-serif;
+}
+
+
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card1{
+    position: relative;
+    height: 17vw;
+    width: 14vw;
+    overflow: hidden;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.card1 img{
+    height: 17vw;
+    width: 14vw;
+    object-fit: cover;
+}
+
+.card-details{
+    position: absolute;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+    bottom: -100%;
+    width: 100%;
+    padding: 1vw 1vw;
+    animation: slidedown 0.6s forwards;
+}
+
+@keyframes slideup {
+    from{
+        bottom: -100%;
+    }
+    to{
+        bottom: 0%;
+    }
+}
+
+.card1:hover .card-details{
+    animation: slideup 0.6s forwards;
+}
+
+@keyframes slidedown {
+    from{
+        bottom: 0%;
+    }
+    to{
+        bottom: -100%;
+    }
+}
+
+.card-details h2{
+    font-size: 1vw;
+    color: orange;
+    font-family: "Anton", sans-serif;
+}
+
+.card-details p{
+    font-size: 0.7vw;
+    line-height: 0.9vw;
+    font-family: "Anton", sans-serif;
+    margin-top: 8%;
+}
+
+.train{
+    height: 2vw;
+    width: 6vw;
+    font-size: 0.8vw;
+    border-radius: 1vw;
+    background-color: orangered;
+    color: white;
+    font-weight: 500;
+    font-family: "Anton", sans-serif;
+    margin-top: 7%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+
+
+
+/* ======Media Queries======= */
+
+
+/* Small mobile screen */
+
+@media (min-width: 200px) and (max-width: 320px) {
+   
+    .logo{
+        height: 10%;
+        width: 29%;
+        padding: 2vw 2vw;
+    }
+
+    .logo img{
+        height: 6rem;
+        width: auto;
+    }
+
+    .bar-icon{
+        display: block;
+        float: right;
+        font-size: 1rem;
+        margin-right: 6vw;
+        margin-top: -10vw;
+        color: white;
+    }
+
+    .nav-link ul{
+        background-color: aqua;
+        width: 32%;
+        float: right;
+        margin-right: 4vw;
+        display: none;
+    }
+
+    li a{
+        font-size: 2vw;
+    }
+
+    .section-2{
+        margin-top: 7vw;
+        height: 54vw;
+    }
+
+    .section-2 h1{
+        margin-top: 6vw;
+        font-size: 6vw;
+    }
+
+    .section-2 p{
+        margin-top: 5vw;
+        font-size: 0.4rem;
+        width: 100%;
+        line-height: 0.5rem;
+    }
+
+    .card{
+        flex-direction: column;
+        gap: 12vw;
+        padding: 2vw 37vw;
+    }
+
+    .card1{
+        height: 34vw;
+        width: 28vw;
+    }
+
+    .card1 img{
+        height: 34vw;
+        width: 28vw;
+    }
+
+    .card-details h2{
+        font-size: 2.6vw;
+    }
+
+    .card-details p{
+        font-size: 1vw;
+        line-height: 1.6vw;
+    }
+
+    .train{
+        height: 2.6vw;
+        width: 7vw;
+        font-size: 1vw;
+
+    }
+    
+}
+
+
+
+/* ======Medium mobile screen======= */
+
+@media (min-width: 321px) and (max-width: 376px) {
+
+    .header{
+        height: 100%;
+    }
+
+    .logo{
+        height: 10%;
+        width: 29%;
+        padding: 2vw 2vw;
+    }
+
+    .logo img{
+        height: 6rem;
+        width: auto;
+    }
+
+    .bar-icon{
+        display: block;
+        float: right;
+        font-size: 1rem;
+        margin-right: 6vw;
+        margin-top: -19vw;
+        color: white;
+    }
+
+    .nav-link ul{
+        background-color: aqua;
+        width: 32%;
+        float: right;
+        margin-right: 4vw;
+        display: none;
+    }
+
+    li a{
+        font-size: 2vw;
+    }
+
+    .section-2{
+        margin-top: 7vw;
+        height: 54vw;
+    }
+
+    .section-2 h1{
+        margin-top: 6vw;
+        font-size: 7vw;
+        -webkit-text-stroke: 0.3px white;
+    }
+
+    .section-2 p{
+        margin-top: 5vw;
+        font-size: 0.5rem;
+        width: 100%;
+        line-height: 0.7rem;
+    }
+
+    .card{
+        flex-direction: column;
+        gap: 12vw;
+        padding: 2vw 37vw;
+    }
+
+    .card1{
+        height: 33vw;
+        width: 27vw;
+    }
+
+    .card1 img{
+        height: 33vw;
+        width: 27vw;
+    }
+
+    .card-details h2{
+        font-size: 2.6vw;
+
+    }
+
+    .card-details p{
+        font-size: 1vw;
+        line-height: 1.6vw;
+    }
+
+    .train{
+        height: 2.6vw;
+        width: 7vw;
+        font-size: 1vw;
+
+    }
+    
+}
+
+
+
+
+/* Large mobile screen */
+
+
+@media (min-width: 377px) and (max-width: 426px) {
+
+    .header{
+        height: 100%;
+    }
+
+    .logo{
+        height: 10%;
+        width: 29%;
+        padding: 2vw 2vw;
+    }
+
+    .logo img{
+        height: 6rem;
+        width: auto;
+    }
+
+    .bar-icon{
+        display: block;
+        float: right;
+        font-size: 1rem;
+        margin-right: 6vw;
+        margin-top: -19vw;
+        color: white;
+    }
+
+    .nav-link ul{
+        background-color: aqua;
+        width: 32%;
+        float: right;
+        margin-right: 4vw;
+        display: none;
+    }
+
+    li a{
+        font-size: 2vw;
+    }
+
+    .section-2{
+        margin-top: 4vw;
+        height: 54vw;
+    }
+
+    .section-2 h1{
+        margin-top: 3vw;
+        font-size: 7vw;
+        -webkit-text-stroke: 0.3px white;
+    }
+
+    .section-2 p{
+        margin-top: 4vw;
+        font-size: 0.5rem;
+        width: 100%;
+        line-height: 0.7rem;
+    }
+
+    .card{
+        flex-direction: column;
+        gap: 12vw;
+        padding: 2vw 37vw;
+    }
+
+    .card1{
+        height: 33vw;
+        width: 27vw;
+    }
+
+    .card1 img{
+        height: 33vw;
+        width: 27vw;
+    }
+
+    .card-details h2{
+        font-size: 2.6vw;
+
+    }
+
+    .card-details p{
+        font-size: 1vw;
+        line-height: 1.6vw;
+    }
+
+    .train{
+        height: 2.6vw;
+        width: 7vw;
+        font-size: 1vw;
+
+    }
+    
+}
+
+
+
+
+
+
+/*Tablet screen */
+
+@media (min-width: 427px) and (max-width: 768px) {
+
+    .logo{
+        height: 15vw;
+        width: 19vw;
+        padding-top: 2%;
+    }
+
+    .logo img{
+        height: 21vw;
+        width: auto;
+    }
+
+    .nav-link ul{
+        float: right;
+        margin-right: 8vw;
+        margin-top: -8vw;
+        width: 32.3%;
+    }
+
+    li a{
+        font-size: 1.8vw;
+    }
+
+    .section-2 h1{
+        font-size: 6.8vw;
+    }
+
+    .section-2 p{
+        font-size: 1.6vw;
+        line-height: 2vw;
+    }
+
+    .card{
+        margin-top: 17vw;
+    }
+
+    .card1{
+        height: 28vw;
+        width: 24vw;
+    }
+
+    .card1 img{
+        height: 28vw;
+        width: 24vw;
+    }
+
+    .card-detailsh2{
+        font-size: 1.3vw;
+    }
+
+    .card-details p{
+        font-size: 1.2vw;
+        line-height: 1.4vw;
+    }
+
+    .train{
+        height: 2.8vw;
+        width: 7.2vw;
+        font-size: 1.2vw;
+    }
+        
+}
+
+
+
+
+/* =====Laptop screen===== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .logo{
+        height: 15vw;
+        width: 19vw;
+        padding-top: -1%;
+    }
+
+    .logo img{
+        height: 21vw;
+        width: auto;
+    }
+
+    .nav-link ul{
+        float: right;
+        margin-right: 8vw;
+        margin-top: -10vw;
+        width: 32%;
+    }
+
+    li a{
+        font-size: 1.7vw;
+    }
+
+    .section-2 h1{
+        font-size: 5.6vw;
+    }
+
+    .section-2 p{
+        font-size: 1.3vw;
+        line-height: 2vw;
+    }
+
+    .card{
+        margin-top: 12vw;
+    }
+
+    .card1{
+        height: 18vw;
+        width: 16vw;
+    }
+
+    .card1 img{
+        height: 18vw;
+        width: 16vw;
+    }
+
+    .card-detailsh2{
+        font-size: 1.3vw;
+    }
+
+    .card-details p{
+        font-size: 1.2vw;
+        line-height: 1.4vw;
+    }
+
+    .train{
+        height: 2.8vw;
+        width: 7.2vw;
+        font-size: 1.2vw;
+    }
+    
+}
+
+
+
+
+
+/* Large Laptop screen */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .logo{
+        height: 15vw;
+        width: 19vw;
+        padding-top: -1%;
+    }
+
+    .logo img{
+        height: 21vw;
+        width: auto;
+    }
+
+    .nav-link ul{
+        float: right;
+        margin-right: 8vw;
+        margin-top: -10vw;
+        width: 32%;
+    }
+
+    li a{
+        font-size: 1.7vw;
+    }
+
+    .section-2{
+        margin-top: 1vw;
+    }
+
+    .section-2 h1{
+        font-size: 5.2vw;
+    }
+
+    .section-2 p{
+        font-size: 1.1vw;
+        line-height: 2vw;
+    }
+
+    .card{
+        margin-top: 7vw;
+    }
+
+    .card1{
+        height: 18vw;
+        width: 16vw;
+    }
+
+    .card1 img{
+        height: 18vw;
+        width: 16vw;
+    }
+
+    .card-detailsh2{
+        font-size: 1.3vw;
+    }
+
+    .card-details p{
+        font-size: 1.2vw;
+        line-height: 1.4vw;
+    }
+
+    .train{
+        height: 2.8vw;
+        width: 7.2vw;
+        font-size: 1.2vw;
+    }
+    
+}
